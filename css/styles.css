@@ -15,6 +15,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
@@ -123,6 +126,9 @@ button {
   left: 100%;
 }
 /*-------------------------------------hero --*/
+.main {
+  flex: 1;
+}
 .hero {
   position: relative;
   width: 1440px;
@@ -177,7 +183,7 @@ button {
 /*-------------------------------------wabis-group --*/
 .wabis-group {
   width: 1440px;
-  height: 972px;
+  height: 970px;
   margin: 0 auto;
   background-color: var(--color-white);
   background-image: url(../images/wabis-group.jpg);
@@ -189,12 +195,10 @@ button {
 .footer {
   padding: 30px 0;
   background-color: var(--color-white);
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   border-top: 1px solid var(--color-gray);
   align-items: center;
+  flex-shrink: 0;
 }
 .container-footer {
   display: flex;
