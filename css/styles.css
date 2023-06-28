@@ -128,7 +128,8 @@ button {
   left: 100%;
 }
 /*-------------------------------------hero --*/
-.main {
+.main,
+.price-main {
   flex: 1;
 }
 .hero {
@@ -228,6 +229,9 @@ button {
   font-weight: 500;
 }
 /*-------------------------------------price --*/
+.price-main {
+  background-color: var(--color-gray);
+}
 .price {
   padding: 50px 0;
 }
