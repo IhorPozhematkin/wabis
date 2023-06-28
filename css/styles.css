@@ -312,3 +312,6 @@ button {
   border-radius: 2px;
   background-color: var(--color-gray);
 }
+.address-list p {
+  margin-top: -10px;
+}
