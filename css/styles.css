@@ -93,7 +93,8 @@ button {
 .address-link:hover,
 .address-link:focus,
 .price-link:hover,
-.price-link:focus {
+.price-link:focus,
+.page-active {
   color: var(--color-orange);
 }
 .address {
