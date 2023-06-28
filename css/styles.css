@@ -92,8 +92,6 @@ button {
 .header-link:focus,
 .address-link:hover,
 .address-link:focus,
-.price-link:hover,
-.price-link:focus,
 .page-active,
 .contacts .address-link:hover,
 .contacts .address-link:focus {
@@ -243,17 +241,37 @@ button {
   font-size: 30px;
   color: var(--color-black);
   font-weight: 500;
+  margin-bottom: 50px;
 }
-.price-image {
-  margin: 20px 0;
+
+.price-button {
+  width: 30%;
+  transition: background-color 250ms linear, color 250ms linear,
+    box-shadow 250ms linear, transform 250ms ease-in;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 2px 2px 4px var(--color-black);
+  transform: scale(1);
+}
+.price-button:hover,
+.price-button:focus {
+  background-color: var(--color-orange);
+}
+.price-button:active {
+  box-shadow: none;
+  transform: scale(0.95);
 }
 .price-link {
   color: var(--color-black);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
-  transition: color 250ms linear;
-  text-decoration: underline;
+}
+.price-button:hover .price-link,
+.price-button:focus .price-link {
+  color: var(--color-white);
 }
 .contacts-main {
   background-color: var(--color-black);
@@ -314,4 +332,26 @@ button {
 }
 .address-list p {
   margin-top: -10px;
+}
+.zoomer {
+  background-position: 100% 100%;
+  position: relative;
+  width: 1158px;
+  overflow: hidden;
+  cursor: zoom-in;
+  margin-bottom: 50px;
+}
+
+.zoomer img:hover {
+  /*
+    * скрываем начальное изображение
+    * при наведении курсора на блок
+    */
+  opacity: 0;
+}
+
+.zoomer img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
 }
