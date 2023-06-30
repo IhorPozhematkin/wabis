@@ -6,6 +6,9 @@
   padding: 60px 15px;
   height: 1270px;
 }
+.pages .container-snowholders {
+  padding: 60px 170px;
+}
 .pages-title {
   text-align: center;
   font-size: 30px;
@@ -16,23 +19,43 @@
   color: var(--color-black);
   margin-bottom: 70px;
 }
+.pages-title.snowstopers-title {
+  margin-bottom: 50px;
+}
+
 .pages-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
   justify-content: center;
 }
+.pages-list.snowstopers-list {
+  gap: 15px 48px;
+}
+.pages-list.snowholders-list {
+  gap: 50px 150px;
+}
 .pages-item {
   flex-basis: calc((100% - 96px) / 3);
   box-shadow: 2px 2px 4px var(--color-black);
   transition: transform 250ms var(--cubic-bezier);
 }
+.snowholders-list .pages-item {
+  flex-basis: calc((100% - 150px) / 2);
+}
 .pages-image {
   object-fit: cover;
   height: 300px;
 }
+.pages-image.snowstopers-image {
+  height: 150px;
+}
 .pages-box {
   padding: 20px 10px;
+  background-color: var(--color-white);
+}
+.snowstopers-list .pages-box {
+  padding: 10px 10px;
   background-color: var(--color-white);
 }
 .pages-boxtitle {
