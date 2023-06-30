@@ -19,7 +19,9 @@
   color: var(--color-black);
   margin-bottom: 70px;
 }
-.pages-title.snowstopers-title {
+.pages-title.snowstopers-title,
+.pages-title.plotek-title,
+.pages-title.rura-title {
   margin-bottom: 50px;
 }
 
@@ -34,6 +36,10 @@
 }
 .pages-list.snowholders-list {
   gap: 50px 150px;
+}
+.pages-list.plotek-list,
+.pages-list.rura-list {
+  gap: 20px 48px;
 }
 .pages-item {
   flex-basis: calc((100% - 96px) / 3);
@@ -50,13 +56,19 @@
 .pages-image.snowstopers-image {
   height: 150px;
 }
+.plotek-list img {
+  height: 240px;
+}
+.pages-image.rura-image {
+  height: 180px;
+}
 .pages-box {
   padding: 20px 10px;
   background-color: var(--color-white);
 }
-.snowstopers-list .pages-box {
+.snowstopers-list .pages-box,
+.rura-list .pages-box {
   padding: 10px 10px;
-  background-color: var(--color-white);
 }
 .pages-boxtitle {
   text-align: center;
