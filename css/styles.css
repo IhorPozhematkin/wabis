@@ -1,4 +1,5 @@
 /*------------adding--------------*/
+@import url("./pages.css");
 :root {
   --font-family: "Rubik", sans-serif;
   --color-black: #1e1e1e;
@@ -135,7 +136,8 @@ button {
 .main,
 .price-main,
 .contacts-main,
-.goods-main {
+.goods-main,
+.pages-main {
   flex: 1;
 }
 .hero {
@@ -234,129 +236,7 @@ button {
   width: 300px;
   font-weight: 500;
 }
-/*-------------------------------------price --*/
-.price-main {
-  background-color: var(--color-gray);
-}
-.price {
-  padding: 50px 0;
-}
-.price-title,
-.catalog-title {
-  text-align: center;
-  font-size: 30px;
-  color: var(--color-black);
-  font-weight: 500;
-  margin-bottom: 50px;
-}
-
-.price-button {
-  width: 30%;
-  transition: background-color 250ms linear, color 250ms linear,
-    box-shadow 250ms linear, transform 250ms ease-in;
-  padding: 10px 20px;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 2px 2px 4px var(--color-black);
-  transform: scale(1);
-}
-.price-button:hover,
-.price-button:focus {
-  background-color: var(--color-orange);
-}
-.price-button:active {
-  box-shadow: none;
-  transform: scale(0.95);
-}
-.price-link {
-  color: var(--color-black);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-}
-.price-button:hover .price-link,
-.price-button:focus .price-link {
-  color: var(--color-white);
-}
-.contacts-main {
-  background-color: var(--color-black);
-}
-.contacts {
-  position: relative;
-  background-color: var(--color-black);
-  background-image: url(../images/contacts.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 1158px;
-  height: 800px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-.contacts-title {
-  text-align: center;
-  font-size: 30px;
-  color: var(--color-white);
-  font-weight: 500;
-}
-.contacts-list {
-  position: absolute;
-  top: 25%;
-  left: 32%;
-  font-weight: 500;
-  color: var(--color-black);
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-}
-.contacts .address-list {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 15px;
-}
-.contacts .address-link {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2;
-  color: var(--color-black);
-  transition: color 250ms linear;
-  letter-spacing: 0.001em;
-}
-.contacts .contacts-list::after {
-  content: "";
-  top: 75%;
-  right: 2%;
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--color-gray);
-}
-.address-list p {
-  margin-top: -10px;
-}
-.zoomer {
-  background-position: 100% 100%;
-  position: relative;
-  width: 1158px;
-  overflow: hidden;
-  cursor: zoom-in;
-  margin-bottom: 50px;
-}
-
-.zoomer img:hover {
-  opacity: 0;
-}
-
-.zoomer img {
-  transition: opacity 0.5s;
-  display: block;
-  width: 100%;
-}
+/*-------------------------------------goods --*/
 .goods-main {
   background-color: var(--color-black);
 }
@@ -425,4 +305,128 @@ button {
   color: var(--color-black);
   transition: color 250ms linear;
   letter-spacing: 0.04em;
+}
+/*-------------------------------------price --*/
+.price-main {
+  background-color: var(--color-gray);
+}
+.price {
+  padding: 50px 0;
+}
+.price-title,
+.catalog-title {
+  text-align: center;
+  font-size: 30px;
+  color: var(--color-black);
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.price-button {
+  width: 30%;
+  transition: background-color 250ms linear, color 250ms linear,
+    box-shadow 250ms linear, transform 250ms ease-in;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 2px 2px 4px var(--color-black);
+  transform: scale(1);
+}
+.price-button:hover,
+.price-button:focus {
+  background-color: var(--color-orange);
+}
+.price-button:active {
+  box-shadow: none;
+  transform: scale(0.95);
+}
+.price-link {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.price-button:hover .price-link,
+.price-button:focus .price-link {
+  color: var(--color-white);
+}
+.zoomer {
+  background-position: 100% 100%;
+  position: relative;
+  width: 1158px;
+  overflow: hidden;
+  cursor: zoom-in;
+  margin-bottom: 50px;
+}
+
+.zoomer img:hover {
+  opacity: 0;
+}
+
+.zoomer img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+}
+/*-------------------------------------contacts --*/
+.contacts-main {
+  background-color: var(--color-black);
+}
+.contacts {
+  position: relative;
+  background-color: var(--color-black);
+  background-image: url(../images/contacts.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1158px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.contacts-title {
+  text-align: center;
+  font-size: 30px;
+  color: var(--color-white);
+  font-weight: 500;
+}
+.contacts-list {
+  position: absolute;
+  top: 25%;
+  left: 32%;
+  font-weight: 500;
+  color: var(--color-black);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.contacts .address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+.contacts .address-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-black);
+  transition: color 250ms linear;
+  letter-spacing: 0.001em;
+}
+.contacts .contacts-list::after {
+  content: "";
+  top: 75%;
+  right: 2%;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-gray);
+}
+.address-list p {
+  margin-top: -10px;
 }
