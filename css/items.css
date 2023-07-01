@@ -1,0 +1,119 @@
+.items-section {
+  background-color: var(--color-white);
+  padding: 60px 0;
+}
+.container {
+  position: relative;
+}
+.items-image {
+  box-shadow: 2px 2px 4px var(--color-black);
+  object-fit: cover;
+}
+.characteristics {
+  position: absolute;
+  display: flex;
+  gap: 35px;
+  right: 15px;
+  top: 110px;
+}
+.characteristics-listname,
+.characteristics-listunit,
+.characteristics-listvalue,
+.application-list,
+.advantages-list {
+  line-height: 1.8;
+  font-weight: 500;
+}
+.characteristics-listunit,
+.characteristics-listvalue {
+  text-align: center;
+}
+.characteristics::before,
+.characteristics::after {
+  content: "";
+  position: absolute;
+  left: 325px;
+  top: 0;
+  display: block;
+  width: 3px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: var(--color-orange);
+}
+.characteristics::after {
+  left: 495px;
+}
+.info-section {
+  background-color: var(--color-white);
+}
+.info-section .container {
+  padding: 20px 15px;
+  background-color: var(--color-gray);
+}
+.application {
+  display: flex;
+  gap: 50px;
+}
+.application-flex {
+  flex-basis: calc((100% - 150px) / 2);
+}
+.application-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.application-list,
+.advantages-list {
+  list-style-type: disc;
+  padding-left: 15px;
+}
+.info-icon {
+  display: inline-block;
+  margin: 30px 0 0 350px;
+
+  fill: var(--color-orange);
+}
+.info-text {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-orange);
+}
+.buttons {
+  height: 150px;
+  background-color: var(--color-orange);
+}
+.buttons-list {
+  display: flex;
+  gap: 114px;
+}
+.items-button {
+  width: 300px;
+  height: 100px;
+  transition: background-color 250ms linear, color 250ms linear,
+    box-shadow 250ms linear, transform 250ms ease-in;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px var(--color-black);
+  transform: scale(1);
+  margin-top: 25px;
+}
+.items-button:hover,
+.items-button:focus {
+  background-color: var(--color-black);
+}
+.items-button:active {
+  box-shadow: none;
+  transform: scale(0.95);
+}
+.buttons-link {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.items-button:hover .buttons-link,
+.items-button:focus .buttons-link {
+  color: var(--color-white);
+}

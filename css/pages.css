@@ -9,7 +9,8 @@
 .pages .container-snowholders {
   padding: 60px 170px;
 }
-.pages-title {
+.pages-title,
+.items-title {
   text-align: center;
   font-size: 30px;
   color: var(--color-black);
@@ -44,7 +45,6 @@
 .pages-item {
   flex-basis: calc((100% - 96px) / 3);
   box-shadow: 2px 2px 4px var(--color-black);
-  transition: transform 250ms var(--cubic-bezier);
 }
 .snowholders-list .pages-item {
   flex-basis: calc((100% - 150px) / 2);

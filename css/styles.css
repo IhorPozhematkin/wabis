@@ -1,5 +1,6 @@
 /*------------adding--------------*/
 @import url("./pages.css");
+@import url("./items.css");
 :root {
   --font-family: "Rubik", sans-serif;
   --color-black: #1e1e1e;
@@ -259,7 +260,6 @@ button {
 .catalog-item {
   flex-basis: calc((100% - 96px) / 3);
   box-shadow: 2px 2px 4px var(--color-black);
-  transition: transform 250ms var(--cubic-bezier);
   object-fit: cover;
 }
 .catalog-box {
