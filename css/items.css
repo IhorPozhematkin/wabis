@@ -80,7 +80,7 @@
   color: var(--color-orange);
 }
 .buttons {
-  height: 150px;
+  height: 155px;
   background-color: var(--color-orange);
 }
 .buttons-list {
@@ -97,7 +97,7 @@
   margin: 0 auto;
   box-shadow: 2px 2px 4px var(--color-black);
   transform: scale(1);
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .items-button:hover,
 .items-button:focus {
