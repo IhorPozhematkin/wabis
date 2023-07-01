@@ -101,7 +101,7 @@
 }
 .items-button:hover,
 .items-button:focus {
-  background-color: var(--color-black);
+  background-color: var(--color-gray);
 }
 .items-button:active {
   box-shadow: none;
@@ -115,5 +115,5 @@
 }
 .items-button:hover .buttons-link,
 .items-button:focus .buttons-link {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
