@@ -48,11 +48,15 @@
 .characteristics.izoteq::after {
   left: 410px;
 }
-.characteristics.reper::before {
+.characteristics.reper::before,
+.characteristics.greben::before {
   left: 95px;
 }
 .characteristics.reper::after {
   left: 145px;
+}
+.characteristics.greben::after {
+  left: 160px;
 }
 .items-text {
   position: absolute;
@@ -61,6 +65,15 @@
   max-width: 590px;
   line-height: 1.5;
   font-weight: 500;
+}
+.items-text.items-3 {
+  top: 383px;
+}
+.items-text.items-4 {
+  top: 359px;
+}
+.items-text.items-6 {
+  top: 311px;
 }
 .info-section {
   background-color: var(--color-white);
