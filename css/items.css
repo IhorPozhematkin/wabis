@@ -15,8 +15,8 @@
   position: absolute;
   display: flex;
   gap: 35px;
-  right: 15px;
   top: 110px;
+  left: 550px;
 }
 .characteristics-listname,
 .characteristics-listunit,
@@ -45,12 +45,30 @@
 .characteristics::after {
   left: 495px;
 }
+.characteristics.izoteq::after {
+  left: 410px;
+}
+.characteristics.reper::before {
+  left: 95px;
+}
+.characteristics.reper::after {
+  left: 145px;
+}
+.items-text {
+  position: absolute;
+  right: 15px;
+  top: 335px;
+  max-width: 590px;
+  line-height: 1.5;
+  font-weight: 500;
+}
 .info-section {
   background-color: var(--color-white);
 }
-.info-section .container {
+.container.application-container {
   padding: 20px 15px;
   background-color: var(--color-gray);
+  height: 546px;
 }
 .application {
   display: flex;
@@ -88,6 +106,7 @@
 .buttons-list {
   display: flex;
   gap: 114px;
+  justify-content: center;
 }
 .items-button {
   width: 300px;
