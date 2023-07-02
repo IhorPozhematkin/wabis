@@ -331,6 +331,10 @@ button {
   display: block;
   box-shadow: 2px 2px 4px var(--color-black);
   transform: scale(1);
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
 }
 .price-button:hover,
 .price-button:focus {
@@ -340,14 +344,8 @@ button {
   box-shadow: none;
   transform: scale(0.95);
 }
-.price-link {
-  color: var(--color-black);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-}
-.price-button:hover .price-link,
-.price-button:focus .price-link {
+.price-button:hover,
+.price-button:focus {
   color: var(--color-white);
 }
 .zoomer {

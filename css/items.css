@@ -6,6 +6,8 @@
   position: relative;
 }
 .items-image {
+  width: 500px;
+  height: 334px;
   box-shadow: 2px 2px 4px var(--color-black);
   object-fit: cover;
 }
@@ -98,6 +100,10 @@
   box-shadow: 2px 2px 4px var(--color-black);
   transform: scale(1);
   margin-top: 28px;
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
 }
 .items-button:hover,
 .items-button:focus {
@@ -107,13 +113,7 @@
   box-shadow: none;
   transform: scale(0.95);
 }
-.buttons-link {
-  color: var(--color-black);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-}
-.items-button:hover .buttons-link,
-.items-button:focus .buttons-link {
+.items-button:hover,
+.items-button:focus {
   color: var(--color-orange);
 }
