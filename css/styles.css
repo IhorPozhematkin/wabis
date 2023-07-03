@@ -127,7 +127,7 @@ button {
 }
 .euro::after {
   position: absolute;
-  content: "41.0";
+  content: "42.0";
   font-size: 22px;
   font-weight: 700;
   top: 21%;
