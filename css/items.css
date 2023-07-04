@@ -78,6 +78,12 @@
 .items-text.items-6 {
   top: 311px;
 }
+.items-text.items-8 {
+  top: 263px;
+}
+.items-text.items-9 {
+  top: 239px;
+}
 .info-section {
   background-color: var(--color-white);
 }

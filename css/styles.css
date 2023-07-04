@@ -1,6 +1,7 @@
 /*------------adding--------------*/
 @import url("./pages.css");
 @import url("./items.css");
+@import url("./euro.css");
 :root {
   --font-family: "Rubik", sans-serif;
   --color-black: #1e1e1e;
@@ -127,7 +128,6 @@ button {
 }
 .euro::after {
   position: absolute;
-  content: "42.0";
   font-size: 22px;
   font-weight: 700;
   top: 21%;
