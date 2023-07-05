@@ -8,6 +8,7 @@
   --color-black: #1e1e1e;
   --color-blackopacity0: rgba(30, 30, 30, 0);
   --color-white: #ededed;
+  --color-whitetwo: #ffffff;
   --color-gray: #c3c3c3;
   --color-orange: #ec6726;
   --box-shadow: 4px 4px 4px var(--color-gray);
@@ -149,7 +150,7 @@ button {
 }
 .hero {
   position: relative;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: var(--color-black);
   background-image: url(../images/hero-wabis.jpg);
@@ -198,10 +199,10 @@ button {
 }
 /*-------------------------------------wabis-group --*/
 .wabis-group {
-  width: 1440px;
+  max-width: 1440px;
   height: 970px;
   margin: 0 auto;
-  background-color: var(--color-white);
+  background-color: var(--color-whitetwo);
   background-image: url(../images/wabis-group.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -264,7 +265,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  justify-content: space-between;
+  justify-content: center;
 }
 .catalog-item {
   flex-basis: calc((100% - 96px) / 3);
@@ -360,7 +361,7 @@ button {
 .zoomer {
   background-position: 100% 100%;
   position: relative;
-  width: 1158px;
+  width: 1140px;
   overflow: hidden;
   cursor: zoom-in;
   margin-bottom: 50px;
@@ -459,6 +460,16 @@ button {
   .footer-wabistext {
     width: 330px;
   }
+  .contacts-title {
+    font-size: 26px;
+  }
+  .price {
+    padding: 30px 0;
+  }
+  .catalog .container {
+    padding: 30px 15px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -476,7 +487,7 @@ button {
   }
   .footer .container {
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     align-items: center;
   }
   .footer-storage {
@@ -484,6 +495,28 @@ button {
   }
   .footer-wabistext {
     text-align: center;
+  }
+  .contacts-main {
+    background-color: var(--color-gray);
+  }
+  .contacts {
+    padding: 20px 0;
+    background-color: var(--color-white);
+    background-image: none;
+  }
+  .contacts-title,
+  .zoomer,
+  .price-title {
+    display: none;
+  }
+  .price-button {
+    font-size: 30px;
+    width: 290px;
+    height: 200px;
+  }
+
+  .catalog-title {
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -519,6 +552,53 @@ button {
     width: 24px;
     height: 24px;
   }
+  .hero {
+    max-width: 1157px;
+    height: 250px;
+    padding-top: 180px;
+  }
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  .wabis-group {
+    max-width: 1157px;
+    height: 750px;
+  }
+  .contacts {
+    width: 768px;
+    height: 530px;
+    padding: 30px 0;
+  }
+  .contacts-list {
+    font-size: 12px;
+    gap: 20px;
+  }
+  .contacts .address-link {
+    font-size: 10px;
+  }
+  .contacts .contacts-list::after {
+    height: 2px;
+    border-radius: 1px;
+  }
+  .address-list p {
+    margin-top: -15px;
+  }
+  .price-title,
+  .catalog-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .price-button {
+    width: 45%;
+  }
+  .zoomer {
+    width: 750px;
+    margin-bottom: 30px;
+  }
+  .catalog-item {
+    flex-basis: calc((100% - 48px) / 2);
+  }
 }
 @media screen and (min-width: 428px) and (max-width: 767px) {
   .container {
@@ -533,6 +613,33 @@ button {
   .euro-icons {
     padding-top: 10px;
     margin-left: 50px;
+  }
+  .hero {
+    max-width: 767px;
+    height: 230px;
+    padding-top: 150px;
+  }
+  .hero-title {
+    font-size: 24px;
+    line-height: 1.5;
+    max-width: 398px;
+  }
+  .wabis-group {
+    max-width: 767px;
+    height: 500px;
+  }
+  .contacts {
+    width: 428px;
+    height: 350px;
+    background-color: var(--color-white);
+    background-image: none;
+  }
+  .contacts-list {
+    top: 5%;
+    left: 23%;
+  }
+  .catalog-item {
+    flex-basis: 340px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 427px) {
@@ -551,5 +658,50 @@ button {
   }
   .footer-wabistext {
     width: 200px;
+  }
+  .hero {
+    max-width: 427px;
+    height: 230px;
+    padding-top: 150px;
+  }
+  .hero-title {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 290px;
+  }
+  .wabis-group {
+    max-width: 427px;
+    height: 280px;
+  }
+  .contacts {
+    width: 320px;
+    height: 350px;
+    background-image: none;
+  }
+  .contacts-list {
+    top: 5%;
+    left: 15%;
+  }
+  .catalog-item {
+    flex-basis: 290px;
+  }
+  .catalog-box {
+    padding: 20px 10px;
+    background-color: var(--color-gray);
+  }
+  .catalog-boxtitle {
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-black);
+    font-weight: 700;
+    transition: color 250ms linear;
+  }
+  .catalog-overlaylist {
+    transition: none;
+    transform: translateY(0%);
+    background-color: var(--color-white);
+  }
+  .catalog-overlaylink {
+    font-size: 13px;
   }
 }
