@@ -23,47 +23,60 @@
   <body>
     <!-------------------------------------header -->
     <header class="header">
-      <div class="container container-header">
-        <nav class="nav">
-          <a class="logo-link" href="../index.html"
-            ><img
-              class="logo-image"
-              src="../images/logo-Wabis.jpg"
-              alt="logo-Wabis"
-          /></a>
-          <ul class="header-list">
-            <li class="header-item">
-              <a class="header-link link page-active" href="../goods.html"
-                >Товари</a
-              >
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="../price.html">Прайс</a>
-            </li>
-            <li class="menu-item">
-              <a class="header-link link" href="../contacts.html">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="address-list">
-            <li address-item>
-              <a class="address-link link" href="tel:+380676731252"
-                >+38 (067) 673-12-52</a
-              >
-            </li>
-            <li>
-              <a class="address-link link" href="tel:+380676766485"
-                >+38 (067) 676-64-85</a
-              >
-            </li>
-          </ul>
-        </address>
-        <div class="euro">
-          <svg class="euro-icons" width="30" height="30">
-            <use href="../images/icons.svg#icon-eur"></use>
-          </svg>
+      <div class="container mobile-container">
+        <div class="wrapper">
+          <nav class="nav">
+            <a class="logo-link" href="../index.html"
+              ><img
+                class="logo-image"
+                src="../images/logo-Wabis.jpg"
+                alt="logo-Wabis"
+            /></a>
+            <ul class="header-list">
+              <li class="header-item">
+                <a class="header-link link page-active" href="../goods.html"
+                  >Товари</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="../price.html">Прайс</a>
+              </li>
+              <li class="menu-item">
+                <a class="header-link link" href="../contacts.html">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="euro">
+            <svg class="euro-icons" width="32" height="32">
+              <use href="../images/icons.svg#icon-eur"></use>
+            </svg>
+          </div>
+
+          <address class="address">
+            <ul class="address-list">
+              <li address-item>
+                <a class="address-link link" href="tel:+380676731252"
+                  >+38 (067) 673-12-52</a
+                >
+              </li>
+              <li>
+                <a class="address-link link" href="tel:+380676766485"
+                  >+38 (067) 676-64-85</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg class="menu-toggleicon" width="32" height="22">
+            <use href="../images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-------------------------------------items -->
@@ -139,7 +152,7 @@
     </main>
     <!-------------------------------------footer -->
     <footer class="footer">
-      <div class="container container-footer">
+      <div class="container">
         <a class="logo-link" href="../index.html"
           ><img
             class="logo-image"
@@ -148,19 +161,58 @@
         /></a>
         <p class="footer-wabistext">
           2013-2023 ТОВ "Вабіс-Україна" є офіційним представником польскої
-          компанії Z.P.H.U. WA-BIS в Україні.
+          компанії Z.P.H.U. WA-BIS в Україні
         </p>
         <div class="footer-storage">
-          <a href="../contacts.html">
-            <svg class="footer-storageicon" width="30" height="30">
+          <a class="footer-storagelink" href="../contacts.html">
+            <svg class="footer-storageicon" width="20" height="20">
               <use href="../images/icons.svg#icon-storage"></use>
             </svg>
           </a>
           <p class="footer-storagetext">
-            Cклад ТОВ "Вабіс-Україна" знаходиться в м.Львів.
+            Cклад ТОВ "Вабіс-Україна" знаходиться в м.Львів
           </p>
         </div>
       </div>
     </footer>
+    <!-- -------------- mobile-menu--------------->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile-iconclose" width="8" height="8">
+          <use href="../images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <nav class="nav">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link link mobile-active" href="../goods.html"
+              >Товари</a
+            >
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="../price.html">Прайс</a>
+          </li>
+          <li class="menu-item">
+            <a class="header-link link" href="../contacts.html">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="address">
+        <ul class="address-list">
+          <li address-item>
+            <a class="address-link link" href="tel:+380676731252"
+              >+38 (067) 673-12-52</a
+            >
+          </li>
+          <li>
+            <a class="address-link link" href="tel:+380676766485"
+              >+38 (067) 676-64-85</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+
+    <script src="../js/mobile-menu.js" defer></script>
   </body>
 </html>

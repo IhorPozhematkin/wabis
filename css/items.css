@@ -90,7 +90,7 @@
 .container.application-container {
   padding: 20px 15px;
   background-color: var(--color-gray);
-  height: 546px;
+  height: 558px;
 }
 .application {
   display: flex;

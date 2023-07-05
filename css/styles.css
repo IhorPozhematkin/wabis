@@ -2,6 +2,7 @@
 @import url("./pages.css");
 @import url("./items.css");
 @import url("./euro.css");
+@import url("./mobile-menu.css");
 :root {
   --font-family: "Rubik", sans-serif;
   --color-black: #1e1e1e;
@@ -64,8 +65,10 @@ button {
   border-bottom: 1px solid var(--color-gray);
   box-shadow: var(--box-shadow);
 }
-.container-header {
+.wrapper {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .nav {
   display: flex;
@@ -82,7 +85,7 @@ button {
 }
 .header-list {
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 .header-link {
   color: var(--color-black);
@@ -105,7 +108,6 @@ button {
   color: var(--color-orange);
 }
 .address {
-  margin-left: 80px;
   font-style: normal;
 }
 .address-list {
@@ -122,16 +124,20 @@ button {
 }
 .euro {
   position: relative;
-  display: flex;
-  align-items: center;
-  margin-left: 80px;
+  color: var(--color-orange);
+  margin-right: 50px;
 }
 .euro::after {
   position: absolute;
   font-size: 22px;
   font-weight: 700;
-  top: 21%;
   left: 100%;
+  top: 0%;
+}
+.euro-icons {
+  fill: var(--color-orange);
+  width: 32px;
+  height: 32px;
 }
 /*-------------------------------------hero --*/
 .main,
@@ -209,23 +215,24 @@ button {
   align-items: center;
   flex-shrink: 0;
 }
-.container-footer {
+.footer .container {
   display: flex;
-  gap: 80px;
   justify-content: space-between;
+  align-items: center;
 }
 .footer-wabistext {
-  width: 600px;
   font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.015em;
 }
 .footer-storage {
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 .footer-storageicon {
   stroke: var(--color-black);
-  width: 100%;
-  margin-left: auto;
+  width: 20px;
+  height: 20px;
   transition: transform 250ms linear, stroke 250ms linear;
 }
 .footer-storageicon:hover,
@@ -234,8 +241,10 @@ button {
   stroke: var(--color-orange);
 }
 .footer-storagetext {
-  width: 300px;
   font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.015em;
+  margin-top: 5px;
 }
 /*-------------------------------------goods --*/
 .goods-main {
@@ -244,7 +253,7 @@ button {
 .catalog .container {
   background-color: var(--color-gray);
   padding: 60px 15px;
-  height: 1270px;
+  height: 1282px;
 }
 .catalog-title {
   display: block;
@@ -426,4 +435,121 @@ button {
 }
 .address-list p {
   margin-top: -10px;
+}
+@media screen and (max-width: 1157px) {
+  .header {
+    padding: 10px 0;
+  }
+  .logo-link {
+    width: 150px;
+  }
+  .logo-link:hover,
+  .logo-link:focus {
+    transform: scale(1);
+  }
+  .euro::after {
+    font-size: 16px;
+  }
+  .footer {
+    padding: 10px 0;
+  }
+  .footer-storage {
+    width: 180px;
+  }
+  .footer-wabistext {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header .header-list,
+  .header .address-list {
+    display: none;
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .euro-icons {
+    width: 30px;
+    height: 30px;
+  }
+  .footer .container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .footer-storage {
+    text-align: center;
+  }
+  .footer-wabistext {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle.js-open-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 768px;
+  }
+  .nav {
+    gap: 40px;
+  }
+  .header-list {
+    gap: 15px;
+  }
+  .header-link {
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .address-list {
+    gap: 8px;
+  }
+  .address-link {
+    font-size: 14px;
+  }
+  .euro {
+    margin-right: 30px;
+  }
+  .euro-icons {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 428px) and (max-width: 767px) {
+  .container {
+    width: 428px;
+  }
+  nav {
+    display: block;
+  }
+  .euro::after {
+    top: 20%;
+  }
+  .euro-icons {
+    padding-top: 10px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .container {
+    width: 320px;
+  }
+  .mobile-menu .address-link {
+    font-size: 24px;
+  }
+  .euro::after {
+    top: 15%;
+  }
+  .euro-icons {
+    padding-top: 7px;
+    margin-left: 15px;
+  }
+  .footer-wabistext {
+    width: 200px;
+  }
 }
