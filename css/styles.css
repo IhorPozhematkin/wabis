@@ -899,7 +899,7 @@ button {
   }
   .catalog-box {
     padding: 20px 10px;
-    background-color: var(--color-gray);
+    background-color: var(--color-white);
   }
   .catalog-boxtitle {
     text-align: center;
@@ -908,13 +908,11 @@ button {
     font-weight: 700;
     transition: color 250ms linear;
   }
-  .catalog-overlaylist {
-    transition: none;
-    transform: translateY(0%);
-    background-color: var(--color-white);
-  }
   .catalog-overlaylink {
     font-size: 13px;
+  }
+  .catalog-image {
+    height: 240px;
   }
   .pages .container {
     padding: 20px 15px;
